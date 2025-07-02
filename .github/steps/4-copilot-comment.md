@@ -10,7 +10,7 @@ _Nicely done utilizing the Copilot tab!_ :partying_face:
 
 You now have leveraged the Copilot quick tab auto-suggest as well as the Copilot hub to accept AI generated suggestions.
 
-Now lets see how you can leverage comments to generate Copilot suggestions!
+Now let's see how you can leverage comments to generate Copilot suggestions!
 
 ### :keyboard: Activity: Pull the latest code to the Codespace repo.
 
