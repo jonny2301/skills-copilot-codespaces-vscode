@@ -95,6 +95,34 @@ Utility scripts located in the `ghostframe-tasks` directory help manage text tem
 
 Run each script without arguments to display usage information.
 
+Templates should be organized in a `templates/` directory with text files
+under `templates/txt/`:
+
+```text
+templates/
+└── txt/
+    └── example.txt
+```
+
+Running
+
+```bash
+python ghostframe-tasks/convert_txt_to_json.py templates/txt templates/json
+```
+
+creates a corresponding `templates/json/` folder containing the converted
+`.json` files. The `validate_templates.py` script expects this JSON directory as
+input and verifies both the data schema and required environment variables.
+
+The `sync_linear_issues.py` script currently contains only placeholder code and
+will be expanded in the future.
+
+Install Python dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
+
 <footer>
 
 <!--
