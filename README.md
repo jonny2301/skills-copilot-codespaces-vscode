@@ -49,7 +49,7 @@ Using Copilot inside a Codespace shows just how easy it is to get up and running
 
 Before you open up a codespace on a repository, you can create a development container and define specific extensions or configurations that will be used or installed in your codespace. Let's create this development container and add copilot to the list of extensions.
 
-1. Navigating back to your **Code** tab of your repository, click the **Add file** drop-down button, and then click `Create new file`.
+1. Navigate back to your **Code** tab of your repository, click the **Add file** drop-down button, and then click `Create new file`.
 1. Type or paste the following in the empty text field prompt to name your file.
    ```
    .devcontainer/devcontainer.json
@@ -91,7 +91,10 @@ Utility scripts located in the `ghostframe-tasks` directory help manage text tem
 | ------ | ------- |
 | `convert_txt_to_json.py` | Convert `.txt` templates to `.json` files. |
 | `validate_templates.py` | Validate template JSON files and check required environment variables. |
-| `sync_linear_issues.py` | (Placeholder) Sync repository issues with Linear. |
+| `sync_linear_issues.py` | **Offline-only stub** — prints progress messages and never makes network requests. When integration is approved, it will create Linear tasks automatically. |
+
+> **Note**
+> `sync_linear_issues.py` is strictly a stub. It never connects to the Linear API or performs network requests. Running it only echoes what it *would* do.
 
 Run each script without arguments to display usage information.
 

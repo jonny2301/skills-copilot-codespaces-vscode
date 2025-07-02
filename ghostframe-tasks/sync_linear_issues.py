@@ -1,4 +1,9 @@
-"""Sync GitHub issues with Linear."""
+"""Offline-only stub for syncing GitHub issues with Linear.
+
+This script merely prints progress messages; it never contacts the Linear API or
+makes network requests. Once integration is approved, it will create Linear
+tasks automatically.
+"""
 
 import sys
 from pathlib import Path
@@ -8,7 +13,7 @@ def sync_issues(repo_path: Path) -> None:
     """Placeholder for future integration with the Linear API."""
 
     print(f"Syncing issues for repository at {repo_path}")
-    # TODO: call Linear API
+    # TODO: integrate with the Linear API once approved. No network calls yet.
 
 
 def main() -> int:
