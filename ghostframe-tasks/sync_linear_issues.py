@@ -1,4 +1,9 @@
-"""Sync GitHub issues with Linear."""
+"""Sync GitHub issues with Linear.
+
+This script is intentionally minimal and **does not** communicate with the
+Linear API. It simply prints messages so we can wire up real API calls later
+once usage is approved.
+"""
 
 import sys
 from pathlib import Path
@@ -8,7 +13,7 @@ def sync_issues(repo_path: Path) -> None:
     """Placeholder for future integration with the Linear API."""
 
     print(f"Syncing issues for repository at {repo_path}")
-    # TODO: call Linear API
+    # TODO: integrate with the Linear API once approved. No API calls yet.
 
 
 def main() -> int:
