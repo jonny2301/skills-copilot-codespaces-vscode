@@ -1,8 +1,7 @@
-"""Sync GitHub issues with Linear.
+"""Stub for syncing GitHub issues with Linear.
 
-This module is a placeholder. It **does not** talk to the Linear API or make
-any network requests. Running it merely echoes progress messages so we can wire
-up real API calls later once approved.
+This script prints progress messages but never contacts the Linear API or makes
+any network requests. It is a placeholder for future integration once approved.
 """
 
 import sys

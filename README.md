@@ -91,10 +91,10 @@ Utility scripts located in the `ghostframe-tasks` directory help manage text tem
 | ------ | ------- |
 | `convert_txt_to_json.py` | Convert `.txt` templates to `.json` files. |
 | `validate_templates.py` | Validate template JSON files and check required environment variables. |
-| `sync_linear_issues.py` | **Stub** — prints info only and makes *no* network requests. Intended for future Linear integration where it will create Linear tasks per GitHub issue. |
+| `sync_linear_issues.py` | **Stub** — prints progress messages only and makes *no* network requests. It will create Linear tasks once integration is approved. |
 
 > **Note**
-> `sync_linear_issues.py` is only a stub. It does not contact the Linear API or make any network requests. Running it simply prints status messages.
+> `sync_linear_issues.py` is a stub. It never connects to the Linear API or makes network requests. Running it only echoes what it *would* do.
 
 Run each script without arguments to display usage information.
 
