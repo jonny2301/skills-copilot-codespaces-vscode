@@ -95,6 +95,8 @@ Utility scripts located in the `ghostframe-tasks` directory help manage text tem
 
 Run each script without arguments to display usage information.
 
+Install the required Python packages with `pip install -r requirements.txt`.
+
 <footer>
 
 <!--
