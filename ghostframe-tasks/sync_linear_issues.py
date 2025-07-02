@@ -1,7 +1,8 @@
-"""Stub for syncing GitHub issues with Linear.
+"""Offline-only stub for syncing GitHub issues with Linear.
 
-This script prints progress messages but never contacts the Linear API or makes
-any network requests. It is a placeholder for future integration once approved.
+This script merely prints progress messages; it never contacts the Linear API or
+makes network requests. Once integration is approved, it will create Linear
+tasks automatically.
 """
 
 import sys
