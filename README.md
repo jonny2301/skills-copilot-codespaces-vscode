@@ -90,10 +90,12 @@ Utility scripts located in the `ghostframe-tasks` directory help manage text tem
 | Script | Purpose |
 | ------ | ------- |
 | `convert_txt_to_json.py` | Convert `.txt` templates to `.json` files. |
-| `validate_templates.py` | Validate template JSON files and check required environment variables. |
+| `validate_templates.py` | Validate template JSON files. Requires the `GHOSTFRAME_API_KEY` environment variable. |
 | `sync_linear_issues.py` | (Placeholder) Sync repository issues with Linear. |
 
-Run each script without arguments to display usage information.
+These utilities are released under the [MIT License](LICENSE).
+
+Install Python dependencies using `pip install -r requirements.txt` before running the scripts. Run each script without arguments to display usage information.
 
 <footer>
 

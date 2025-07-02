@@ -1,4 +1,7 @@
-"""Utilities for validating text template JSON files."""
+"""Utilities for validating text template JSON files.
+
+The script expects a ``GHOSTFRAME_API_KEY`` environment variable to be set.
+"""
 
 import json
 import os
@@ -17,7 +20,7 @@ TEMPLATE_SCHEMA = {
     'required': ['lines']
 }
 
-REQUIRED_ENV_VARS = ['API_KEY']
+REQUIRED_ENV_VARS = ['GHOSTFRAME_API_KEY']
 
 
 def validate_env() -> bool:
