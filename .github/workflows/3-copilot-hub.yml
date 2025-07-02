@@ -3,7 +3,7 @@ name: Step 3, Copilot hub suggestion
 # This step triggers after push to main#member.js.
 # This workflow updates from step 3 to step 4.
 
-# This will run every time we push to main#member.js.
+# This will run every time we push changes to `member.js` on main.
 # Reference: https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
