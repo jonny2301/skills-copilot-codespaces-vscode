@@ -83,6 +83,18 @@ Before you open up a codespace on a repository, you can create a development con
 
 **Wait about 60 seconds then refresh your repository landing page for the next step.**
 
+## Ghostframe tasks
+
+Utility scripts located in the `ghostframe-tasks` directory help manage text templates and issue tracking:
+
+| Script | Purpose |
+| ------ | ------- |
+| `convert_txt_to_json.py` | Convert `.txt` templates to `.json` files. |
+| `validate_templates.py` | Validate template JSON files and check required environment variables. |
+| `sync_linear_issues.py` | (Placeholder) Sync repository issues with Linear. |
+
+Run each script without arguments to display usage information.
+
 <footer>
 
 <!--
