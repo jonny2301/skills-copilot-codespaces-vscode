@@ -36,3 +36,4 @@
 ehthumbs.db
 Thumbs.db
 ghostframe_tasks/__pycache__/
+tests/__pycache__/
