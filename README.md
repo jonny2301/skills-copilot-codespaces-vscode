@@ -85,22 +85,22 @@ Before you open up a codespace on a repository, you can create a development con
 
 ## Ghostframe tasks
 
-Utility scripts located in the `ghostframe-tasks` directory help manage text templates and issue tracking:
+Utility scripts located in the `ghostframe_tasks` directory help manage text templates and issue tracking:
 
 | Script | Purpose |
 | ------ | ------- |
-| `convert_txt_to_json.py` | Convert `.txt` templates to `.json` files. |
-| `validate_templates.py` | Validate template JSON files and check required environment variables. |
-| `sync_linear_issues.py` | **Offline-only stub** — prints progress messages and never makes network requests. When integration is approved, it will create Linear tasks automatically. |
+| `ghostframe_tasks.convert_txt_to_json` | Convert `.txt` templates to `.json` files. |
+| `ghostframe_tasks.validate_templates` | Validate template JSON files and check required environment variables. |
+| `ghostframe_tasks.sync_linear_issues` | **Offline-only stub** — prints progress messages and never makes network requests. When integration is approved, it will create Linear tasks automatically. |
 
 > **Note**
-> `sync_linear_issues.py` is strictly a stub. It never connects to the Linear API or performs network requests. Running it only echoes what it *would* do.
+> `ghostframe_tasks.sync_linear_issues` is strictly a stub. It never connects to the Linear API or performs network requests. Running it only echoes what it *would* do.
 
 Run each script without arguments to display usage information.
 
 ### Prerequisites
 
-The `validate_templates.py` script requires an `API_KEY` environment variable. Copy `.env.example` to `.env` and add your key or export it directly in your shell before running the script.
+The `ghostframe_tasks.validate_templates` module requires an `API_KEY` environment variable. Copy `.env.example` to `.env` and add your key or export it directly in your shell before running the script.
 
 Templates should be organized in a `templates/` directory with text files
 under `templates/txt/`:
@@ -114,20 +114,20 @@ templates/
 Running
 
 ```bash
-python ghostframe-tasks/convert_txt_to_json.py templates/txt templates/json
+python -m ghostframe_tasks.convert_txt_to_json templates/txt templates/json
 ```
 
 creates a corresponding `templates/json/` folder containing the converted
-`.json` files. The `validate_templates.py` script expects this JSON directory as
+`.json` files. The `ghostframe_tasks.validate_templates` module expects this JSON directory as
 input and verifies both the data schema and required environment variables.
 Before running, set an `API_KEY` environment variable:
 
 ```bash
 export API_KEY=<your-api-key>
-python ghostframe-tasks/validate_templates.py templates/json
+python -m ghostframe_tasks.validate_templates templates/json
 ```
 
-The `sync_linear_issues.py` script currently contains only placeholder code and
+The `ghostframe_tasks.sync_linear_issues` module currently contains only placeholder code and
 will be expanded in the future.
 
 Install Python dependencies with:
