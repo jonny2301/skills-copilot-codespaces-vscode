@@ -95,6 +95,10 @@ Utility scripts located in the `ghostframe-tasks` directory help manage text tem
 
 Run each script without arguments to display usage information.
 
+### Prerequisites
+
+The `validate_templates.py` script requires an `API_KEY` environment variable. Copy `.env.example` to `.env` and add your key or export it directly in your shell before running the script.
+
 Templates should be organized in a `templates/` directory with text files
 under `templates/txt/`:
 
