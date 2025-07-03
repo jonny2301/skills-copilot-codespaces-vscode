@@ -48,7 +48,7 @@ def main() -> int:
     """CLI entry point."""
 
     if len(sys.argv) != 2:
-        print("Usage: validate_templates.py <directory>")
+        print("Usage: python -m ghostframe_tasks.validate_templates <directory>")
         return 1
     if not validate_env():
         return 1

@@ -21,7 +21,7 @@ def main() -> int:
     """CLI entry point."""
 
     if len(sys.argv) != 3:
-        print("Usage: convert_txt_to_json.py <src_dir> <dest_dir>")
+        print("Usage: python -m ghostframe_tasks.convert_txt_to_json <src_dir> <dest_dir>")
         return 1
     src = Path(sys.argv[1])
     dest = Path(sys.argv[2])
