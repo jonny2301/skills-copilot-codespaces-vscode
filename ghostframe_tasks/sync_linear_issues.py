@@ -20,7 +20,7 @@ def main() -> int:
     """CLI entry point."""
 
     if len(sys.argv) != 2:
-        print("Usage: sync_linear_issues.py <repo_path>")
+        print("Usage: python -m ghostframe_tasks.sync_linear_issues <repo_path>")
         return 1
     repo_path = Path(sys.argv[1])
     if not repo_path.is_dir():
